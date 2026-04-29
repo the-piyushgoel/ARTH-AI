@@ -1,0 +1,12 @@
+{
+  "name": "arth",
+  "version": "1.0.0",
+  "description": "ARTH — AI-Powered Financial Intelligence System",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:ml": "cd ml-service && uvicorn app.main:app --reload --port 8000",
+    "install:all": "cd frontend && npm install && cd ../backend && npm install && cd ../ml-service && pip install -r requirements.txt"
+  }
+}
